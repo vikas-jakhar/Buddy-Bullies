@@ -10,8 +10,9 @@
 
 :root {
     /* font-size */
+    --fs-16: 16px;
     --fs-sm: 20px;
-    --fs-md: ;
+    --fs-md: 30px;
     --fs-lg: 50px;
     --fs-xl: 35px;
     /* color */
@@ -62,7 +63,7 @@
     color: #B3C6D2;
 }
 
-.bnt-get {
+.btn-get {
     font-size: 25px;
     color: #001D49;
     width: 225px;
@@ -73,9 +74,10 @@
     transition: all 300ms ease-in-out;
 }
 
-.bnt-get:hover {
+.btn-get:hover {
     background-color: transparent;
     border: 2px dotted var(--color-white);
+    border-bottom: 2px solid var(--color-white);
     color: var(--color-white);
     box-shadow: 0 0 10px var(--color-white);
     scale: 1.05;
@@ -109,10 +111,41 @@
     left: 0%;
 }
 
+.text-3 {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    line-height: 21.76px;
+    color: #80848C;
+}
+
+.btn-coming {
+    background: #FFFFFF;
+    width: 149px;
+    height: 44px;
+    border-radius: 45.5px;
+    color: var(--color-black);
+    border: 2px inset transparent;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-coming:hover {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 2px inset var(--color-white);
+    box-shadow: 0 0 10px var(--color-white);
+}
 
 
 
 
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+.fs-30 {
+    font-size: var(--fs-md);
+}
 
 .fw-700 {
     font-weight: 700;
@@ -126,7 +159,7 @@
     :root {
         /* font-size */
         --fs-sm: 20px;
-        --fs-md: ;
+        --fs-md: 30px;
         --fs-lg: 50px;
         --fs-xl: 70px;
     }
