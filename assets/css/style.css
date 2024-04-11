@@ -169,7 +169,7 @@
     width: 100%;
     min-height: 511px;
     border-radius: 20px;
-    padding: 40px;
+    padding: 22px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -337,6 +337,12 @@
 
 .fs-14 {
     font-size: var(--fs-14);
+}
+
+@media (min-width:768px) {
+    .card1 {
+        padding: 40px;
+    }
 }
 
 @media (min-width:992px) {
