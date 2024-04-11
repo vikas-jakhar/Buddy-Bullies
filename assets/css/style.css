@@ -11,6 +11,7 @@
 
 :root {
     /* font-size */
+    --fs-14: 14px;
     --fs-16: 16px;
     --fs-18: 18px;
     --fs-sm: 20px;
@@ -22,6 +23,7 @@
     --color-black: #000000;
     /* line-height */
     --lh-n: normal;
+    --lh-24: 24px;
 }
 
 .heading {
@@ -90,7 +92,8 @@
 .section-2,
 .section-3,
 .section-4,
-.section-5 {
+.section-5,
+.footer-1 {
     background-color: #000A1A;
 }
 
@@ -322,6 +325,18 @@
 
 .lh-n {
     line-height: var(--lh-n);
+}
+
+.max-w-388 {
+    max-width: 388px;
+}
+
+.lh-24 {
+    line-height: var(--lh-24);
+}
+
+.fs-14 {
+    font-size: var(--fs-14);
 }
 
 @media (min-width:992px) {
