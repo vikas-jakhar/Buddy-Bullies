@@ -83,7 +83,8 @@
     scale: 1.05;
 }
 
-.section-2 {
+.section-2,
+.section-3 {
     background-color: #000A1A;
 }
 
@@ -154,12 +155,26 @@
 }
 
 .card1 {
+    height: 100%;
     background: #031227;
     width: 100%;
     min-height: 511px;
     border-radius: 20px;
     padding: 40px;
     transition: all 0.3s ease-in-out;
+}
+
+.img6 {
+    transition: all 0.3s ease-in-out;
+}
+
+.card1:hover {
+    filter: drop-shadow(0 0 10px #FFF);
+
+    .img6 {
+        scale: 1.1;
+        filter: drop-shadow(0 0 4px #FFF);
+    }
 }
 
 
