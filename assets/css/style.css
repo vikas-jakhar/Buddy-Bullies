@@ -136,6 +136,31 @@
     box-shadow: 0 0 10px var(--color-white);
 }
 
+.icon1 {
+    transition: all 0.3s ease-in-out;
+}
+
+.icon1:hover {
+    filter: drop-shadow(0 0 10px var(--color-white));
+    scale: 1.1;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mt-130 {
+    margin-top: 130px;
+}
+
+.card1 {
+    background: #031227;
+    width: 100%;
+    min-height: 511px;
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.3s ease-in-out;
+}
 
 
 
