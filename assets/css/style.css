@@ -84,7 +84,9 @@
 }
 
 .section-2,
-.section-3 {
+.section-3,
+.section-4,
+.section-5 {
     background-color: #000A1A;
 }
 
@@ -177,6 +179,63 @@
     }
 }
 
+.roadmap {
+    padding-left: 26px;
+}
+
+.ml-11 {
+    margin-left: 26px;
+}
+
+.roadmap::after {
+    content: '';
+    background-image: url(../image/timeline.png);
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 2px;
+    left: 26px;
+
+}
+
+.timeline-box {
+    width: 80%;
+    padding-left: 37px;
+    position: relative;
+}
+
+.timeline-box::after {
+    content: '';
+    width: 43px;
+    height: 43px;
+    background: #009DFF;
+    border: 3.23px solid #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    left: -21.2px;
+    top: 0%;
+    z-index: 1;
+}
+
+.timeline-box::before {
+    content: '';
+    width: 64px;
+    height: 64px;
+    background: #009DFF;
+    border-radius: 50%;
+    position: absolute;
+    left: -32.2px;
+    top: -11px;
+    opacity: 10%;
+}
+
+.mt-146 {
+    margin-top: 146px;
+}
+
+.max-w-786 {
+    max-width: 786px;
+}
 
 
 .fs-16 {
@@ -202,5 +261,41 @@
         --fs-md: 30px;
         --fs-lg: 50px;
         --fs-xl: 70px;
+    }
+
+    .roadmap {
+        padding-left: 0px;
+    }
+
+    .roadmap::after {
+        left: 50%;
+    }
+
+    .timeline-box {
+        width: 50%;
+        padding-left: 64px;
+        position: relative;
+    }
+
+    .left-50 {
+        left: 50%;
+    }
+
+    .right.timeline-box::after {
+        right: -21.2px;
+        left: auto;
+    }
+
+    .right.timeline-box::before {
+        right: -32.2px;
+        left: auto;
+    }
+
+    .mb-212 {
+        margin-bottom: 212px;
+    }
+
+    .pr-64 {
+        padding-right: 64px;
     }
 }
