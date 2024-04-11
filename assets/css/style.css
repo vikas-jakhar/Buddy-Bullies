@@ -12,6 +12,7 @@
 :root {
     /* font-size */
     --fs-16: 16px;
+    --fs-18: 18px;
     --fs-sm: 20px;
     --fs-md: 30px;
     --fs-lg: 50px;
@@ -19,6 +20,8 @@
     /* color */
     --color-white: #FFFFFF;
     --color-black: #000000;
+    /* line-height */
+    --lh-n: normal;
 }
 
 .heading {
@@ -250,6 +253,10 @@
     font-size: var(--fs-md);
 }
 
+.fs-18 {
+    font-size: var(--fs-18);
+}
+
 .fw-700 {
     font-weight: 700;
 }
@@ -302,6 +309,19 @@
 
 .color-white {
     color: var(--color-white);
+}
+
+.prime {
+    transition: all 0.3s ease-in-out;
+}
+
+.prime:hover {
+    scale: 1.07;
+    filter: drop-shadow(0 0 10px #FFF);
+}
+
+.lh-n {
+    line-height: var(--lh-n);
 }
 
 @media (min-width:992px) {
