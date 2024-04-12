@@ -14,10 +14,10 @@
     --fs-14: 14px;
     --fs-16: 16px;
     --fs-18: 18px;
-    --fs-sm: 20px;
+    --fs-sm: 16px;
     --fs-md: 30px;
-    --fs-lg: 50px;
-    --fs-xl: 35px;
+    --fs-lg: 40px;
+    --fs-xl: 37px;
     /* color */
     --color-white: #FFFFFF;
     --color-black: #000000;
@@ -65,7 +65,7 @@
     font-family: "Poppins", sans-serif;
     font-size: var(--fs-sm);
     font-weight: 500;
-    line-height: 41px;
+    line-height: 30px;
     color: #B3C6D2;
 }
 
@@ -516,6 +516,40 @@
     }
 }
 
+.list-text {
+    position: relative;
+}
+
+.list-text:hover {
+    text-shadow: 0 0 2px #009DFF;
+}
+
+.list-text::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #001D49;
+    right: 0%;
+    bottom: -5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px var(--color-white);
+    animation: 1s bottomline infinite;
+}
+
+.list-text:hover::after {
+    width: 100%;
+    left: 0%;
+    right: auto;
+}
+
+@keyframes bottomline {
+    to {
+        background: linear-gradient(to left, #009DFF, #FFFFFF, #001D49, #80848C);
+        background-size: 20vh;
+    }
+}
+
 
 .menu-icon {
     display: flex;
@@ -547,6 +581,10 @@
 
     .h-3 {
         line-height: 86.8px;
+    }
+
+    .text-1 {
+        line-height: 41px;
     }
 }
 
