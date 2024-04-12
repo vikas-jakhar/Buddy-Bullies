@@ -543,6 +543,14 @@
     right: auto;
 }
 
+.preloader {
+    background-color: #001D49;
+    z-index: 200;
+    top: 0%;
+    left: 0%;
+    display: flex;
+}
+
 @keyframes bottomline {
     to {
         background: linear-gradient(to left, #009DFF, #FFFFFF, #001D49, #80848C);

@@ -30,3 +30,11 @@ window.addEventListener("scroll", function () {
         scrollbtn.style.display = "none";
     }
 });
+
+var preloader = document.querySelector(".preloader");
+
+preloader.style.display = "flex";
+
+setTimeout(() => {
+    preloader.style.display = "none";
+}, 2000);
