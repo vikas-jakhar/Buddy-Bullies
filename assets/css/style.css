@@ -14,6 +14,8 @@
     --fs-14: 14px;
     --fs-16: 16px;
     --fs-18: 18px;
+    --fs-21: 21.74px;
+    --fs-25: 25px;
     --fs-sm: 16px;
     --fs-md: 30px;
     --fs-lg: 40px;
@@ -28,7 +30,7 @@
 
 .heading {
     font-family: "Poppins", sans-serif;
-    font-size: 21.74px;
+    font-size: var(--fs-21);
     font-weight: 600;
     line-height: 32.62px;
     color: var(--color-white);
@@ -36,7 +38,7 @@
 
 .list-text {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-18);
     font-weight: 500;
     line-height: 27px;
     color: var(--color-white);
@@ -47,6 +49,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.menu1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px #009DFF;
+
 }
 
 .max-w-515 {
@@ -70,7 +78,7 @@
 }
 
 .btn-get {
-    font-size: 25px;
+    font-size: var(--fs-25);
     color: #001D49;
     width: 225px;
     height: 69px;
@@ -93,7 +101,8 @@
 .section-3,
 .section-4,
 .section-5,
-.footer-1 {
+.footer-1,
+.bg-color {
     background-color: #000A1A;
 }
 
@@ -341,11 +350,11 @@
 
 .scrollToTopBtn {
     display: none;
-    background-color: black;
+    background-color: var(--color-black);
     border: none;
-    color: white;
+    color: var(--color-white);
     cursor: pointer;
-    font-size: 18px;
+    font-size: var(--fs-18);
     line-height: 48px;
     width: 48px;
     bottom: 3%;

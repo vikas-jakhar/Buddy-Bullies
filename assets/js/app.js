@@ -22,12 +22,23 @@ scrollbtn.addEventListener("click", function () {
     })
 });
 
+let menu = document.querySelector(".menu");
+
 window.addEventListener("scroll", function () {
     if (document.documentElement.scrollTop > 700) {
         scrollbtn.style.display = "block";
     }
     else {
         scrollbtn.style.display = "none";
+    }
+});
+
+window.addEventListener("scroll", function () {
+    if (document.documentElement.scrollTop > 100) {
+        menu.classList.add("menu1");
+    }
+    else {
+        menu.classList.remove("menu1")
     }
 });
 
