@@ -23,6 +23,7 @@
     /* color */
     --color-white: #FFFFFF;
     --color-black: #000000;
+    --color-001D49: #001D49;
     /* line-height */
     --lh-n: normal;
     --lh-24: 24px;
@@ -79,7 +80,7 @@
 
 .btn-get {
     font-size: var(--fs-25);
-    color: #001D49;
+    color: var(--color-001D49);
     width: 225px;
     height: 69px;
     border-radius: 45.5px;
@@ -376,7 +377,7 @@
     position: absolute;
     top: 0%;
     right: -100%;
-    background-color: #001D49;
+    background-color: var(--color-001D49);
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -538,7 +539,7 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #001D49;
+    background-color: var(--color-001D49);
     right: 0%;
     bottom: -5px;
     transition: all 0.3s ease-in-out;
@@ -553,7 +554,7 @@
 }
 
 .preloader {
-    background-color: #001D49;
+    background-color: var(--color-001D49);
     z-index: 200;
     top: 0%;
     left: 0%;
